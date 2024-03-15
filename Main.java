@@ -20,9 +20,12 @@ public class Main {
         ubicaciones.get(1).addExit("O", 2);
 
         ubicaciones.get(2).addExit("N", 5);
+         
         ubicaciones.get(3).addExit("O", 1);
+         
         ubicaciones.get(4).addExit("E", 2);
         ubicaciones.get(4).addExit("N", 1);
+         
         ubicaciones.get(5).addExit("S", 1);
         ubicaciones.get(5).addExit("O", 2);
 
@@ -51,7 +54,6 @@ public class Main {
             if (ubicacion.getExits().containsKey(input)) {
                 ubicacionActual = ubicacion.getExits().get(input);
             } else if (input.equals("Q")) {
-                System.out.println("Hasta luego");
                 continuar = false;
             } else {
                 System.out.println("No se puede ir en esa direccion");
